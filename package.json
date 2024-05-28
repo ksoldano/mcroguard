@@ -1,0 +1,39 @@
+{
+  "name": "mc-guard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:real": "cross-env NODE_ENV=real yarn ts-node ./server.js",
+    "start:dev": "cross-env NODE_ENV=dev yarn ts-node ./server.js",
+    "start:demo": "cross-env NODE_ENV=demo yarn ts-node ./server.js",
+    "serve": "cross-env NODE_ENV=local yarn ts-node ./server.js",
+    "startxxx": "pm2x start ./server.js",
+    "build": "tsc -p ."
+  },
+  "author": "cobizone",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "dependencies": {
+    "@types/node": "20.12.7",
+    "axios": "1.6.8",
+    "compression": "1.7.4",
+    "console-stamp": "^3.1.1",
+    "cors": "2.8.5",
+    "cross-env": "7.0.3",
+    "express": "^4.18.2",
+    "form-data": "4.0.0",
+    "formidable": "2.1.1",
+    "kafkajs": "2.2.4",
+    "knex": "3.1.0",
+    "log4js": "6.9.1",
+    "objection": "3.1.4",
+    "pg": "8.11.3",
+    "vue": "3.4.27",
+    "vue-server-renderer": "2.7.16"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
